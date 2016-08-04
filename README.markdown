@@ -3,8 +3,7 @@ Redis Session Manager for Apache Tomcat (Supports JedisCluster)
 
 Config Sample
 
-Tomcat context.xml
-
+Add the following into your Tomcat context.xml (or the context block of the server.xml if applicable.)
 
     <Valve className="com.orangefunction.tomcat.redissessions.RedisSessionHandlerValve" />
     <Manager className="com.orangefunction.tomcat.redissessions.RedisSessionManager"
