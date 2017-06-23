@@ -8,7 +8,8 @@ Add the following into your Tomcat context.xml (or the context block of the serv
     <Valve className="com.orangefunction.tomcat.redissessions.RedisSessionHandlerValve" />
     <Manager className="com.orangefunction.tomcat.redissessions.RedisSessionManager"
          redisNodes="192.168.1.81:7001,192.168.1.81:7002,192.168.1.81:7003,192.168.1.82:7004,192.168.1.82:7005,192.168.1.82:7006"
-         timeout="300000"
+         password="redis_password"
+         timeout="300000"
          maxRedirections="6"
          maxWaitMillis="-1"
          maxTotal="1000"
@@ -16,3 +17,5 @@ Add the following into your Tomcat context.xml (or the context block of the serv
          maxIdle="100"
          maxInactiveInterval="60"/>
 
+
+Password is optional.
