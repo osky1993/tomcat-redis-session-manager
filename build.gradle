@@ -44,7 +44,3 @@ artifacts {
   archives javadocJar
   archives sourcesJar
 }
-
-signing {
-  sign configurations.archives
-}
